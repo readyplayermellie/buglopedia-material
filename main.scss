@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+$font-stack: 'Press Start 2P', cursive;
+$primary-color: rgb(233, 227, 227);
+$secondary-color: rgb(30, 30, 30);
+
+/* Global styling */
+html {
+  font: 100% $font-stack;
+  background-color: $secondary-color;
+  color: $primary-color;
+  body {
+    padding: 0;
+    margin: 0;
+    line-height: 2;
+  }
+  p {
+    font-size: 11px;
+  }
+  a {
+    text-decoration: none;
+    padding: 10px;
+    color: $primary-color;
+  }
+}
+
+/* App.vue */
+#nav {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Index.vue */
+#welcome-text {
+  text-align: center;
+  width: 300px;
+  margin: auto;
+}
+
+/* GenerateBug.vue */
+#detail-container {
+  margin-left: 8%;
+  position: relative;
+  height: 800px;
+  z-index: 1;
+  #buglopedia-background {
+    height: 800px;
+    position: absolute;
+  }
+  #bug-image {
+    position: absolute;
+    left: 349px;
+    top: 325px;
+    max-width: 225px;
+    max-height: 150px;
+    border-radius: 13px;
+  }
+  #bug-name {
+    position: absolute;
+    left: 715px;
+    top: 285px;
+  }
+  #bug-description {
+    position: absolute;
+    left: 715px;
+    top: 320px;
+    max-width: 299px;
+    max-height: 130px;
+    overflow-y: scroll;
+  }
+  #generate-bug-button {
+    color: $secondary-color;
+    position: absolute;
+    left: 720px;
+    top: 485px;
+  }
+}
+
+
+
+
+
+
+
